@@ -1,0 +1,99 @@
+.apidata-div {
+  position: relative;
+  margin-top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-results {
+  width: 100%;
+}
+
+.search-info {
+  display: flex;
+  flex-direction: column;
+  background-image: url('https://i.ibb.co/P4KJrhD/photo-1590846406792-0adc7f938f1d.jpg');
+  border-radius: 10px;
+  width: 84%;
+  height: 250px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.restaurant-address {
+  position: absolute;
+  margin-top: 3px;
+  right: 10px;
+  bottom: 5px;
+}
+
+.restaurant-link {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.restaurant-menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  background: brown;
+  cursor: pointer;
+  margin: 2rem auto 5px auto;
+  text-decoration: none;
+  color: white;
+}
+
+.restaurant-number {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  padding-top: 8px;
+}
+.restaurant-number > span {
+  font-size: 15px;
+}
+
+.restaurant-phoneIcon {
+  font-size: 11px !important;
+}
+.restaurant-food {
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 480px) {
+  .restaurant-menu-link {
+    width: 30%;
+  }
+  .apidata-div {
+    font-size: 20px;
+    position: relative;
+    margin-top: 0%;
+  }
+  .restaurant-name {
+    font-size: 16px;
+  }
+  .restaurant-address {
+    font-size: 8px;
+    color: black;
+    font-weight: bolder;
+  }
+  .restaurant-food {
+    font-size: 12px;
+  }
+  .restaurant-link {
+    font-size: 8px;
+  }
+}
