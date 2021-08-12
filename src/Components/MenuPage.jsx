@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import HomePage from '../HomePage';
+import Navbar from '../Navbar';
 import { useParams } from 'react-router-dom';
 import './menupage.css';
 import axios from 'axios';
@@ -7,7 +7,6 @@ export default function MenuPage() {
   const { restId } = useParams();
   const [menuData, setMenuData] = useState([]);
   const [restaurantName, setRestaurantName] = useState('');
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     var options = {
@@ -24,9 +23,7 @@ export default function MenuPage() {
     axios
       .request(options)
       .then(function(response) {
-        setLoading(false);
-        console.log(response.data.data);
-
+  
         setMenuData(response.data.data);
         setRestaurantName(response.data.data[0].restaurant_name);
       })
@@ -37,7 +34,7 @@ export default function MenuPage() {
 
   return (
     <>
-      <HomePage />
+      <Navbar />
 
       <div className="menu-restaurant-poster">
         <h1>{restaurantName}</h1>

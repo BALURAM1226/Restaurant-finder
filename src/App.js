@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import HomePage from './HomePage';
+import Navbar from './Navbar';
 import SearchSection from './Components/SearchSection';
 import MenuPage from './Components/MenuPage';
 import ApiData from './Components/ApiData';
@@ -20,7 +20,7 @@ export default function App() {
           <MenuPage />
         </Route>
         <Route exact path="/">
-          <HomePage />
+          <Navbar />
           <SearchSection handleSearch={handleSearch} />
           <ApiData cityName={cityName} />
         </Route>

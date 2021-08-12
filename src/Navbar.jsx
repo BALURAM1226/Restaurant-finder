@@ -1,5 +1,7 @@
 import React from 'react';
-import './homepage.css';
+import './navbar.css';
+import { Link } from 'react-router-dom';
+
 export default function HomePage() {
   return (
     <>
@@ -13,10 +15,10 @@ export default function HomePage() {
           </div>
           <div className="info">
             <ul>
-              <li>Home</li>
+              <li><Link to="/">Home</Link></li>
               <li>Menu</li>
               <li>About</li>
-              <li>Contact</li>
+              <li>Contact-bk</li>
             </ul>
           </div>
         </nav>
