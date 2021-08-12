@@ -1,5 +1,5 @@
 import React from 'react';
-import './searchsection';
+import './searchsection.css';
 import SearchBar from 'material-ui-search-bar';
 
 export default function SearchSection(props) {
