@@ -15,10 +15,14 @@ export default function HomePage() {
           </div>
           <div className="info">
             <ul>
-              <li><Link to="/">Home</Link></li>
+              <li>
+                <Link to="/" style={{ textDecoration: 'none', color: 'white' }}>
+                  Home
+                </Link>
+              </li>
               <li>Menu</li>
               <li>About</li>
-              <li>Contact-bk</li>
+              <li>Contact</li>
             </ul>
           </div>
         </nav>
